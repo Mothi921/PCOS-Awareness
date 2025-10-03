@@ -36,6 +36,15 @@
             border: 1px solid #e2eeef;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
+        .story-card {
+            border: 1px solid #f9a8d4;
+            background-color: #fdf2f8;
+            transition: transform 0.2s;
+        }
+        .story-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px rgba(219, 39, 119, 0.1);
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -63,9 +72,9 @@
 
     <section id="impact" class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <h3 class="text-4xl font-extrabold pink-accent mb-12 text-center">Our Community Achievements</h3>
+            <h3 class="text-4xl font-extrabold pink-accent mb-12 text-center">Our Community Achievements & Patient Stories</h3>
             
-            <div class="grid md:grid-cols-3 gap-8 text-center bg-white p-8 rounded-xl shadow-xl border-b-4 border-teal-500">
+            <div class="grid md:grid-cols-3 gap-8 text-center bg-white p-8 rounded-xl shadow-xl border-b-4 border-teal-500 mb-12">
                 
                 <div class="p-4 border-r border-gray-200 md:border-r-0">
                     <p class="text-5xl font-extrabold teal-accent mb-2">70+</p>
@@ -74,24 +83,46 @@
                 </div>
                 
                 <div class="p-4 border-r border-gray-200">
-                    <p class="text-5xl font-extrabold pink-accent mb-2">3</p>
-                    <p class="text-xl font-semibold text-gray-700">Featured Patient Stories</p>
-                    <p class="text-sm text-gray-500 mt-1">Humanizing PCOS through shared experiences of Sarah M., Chloe D., and Lisa T.</p>
-                </div>
-                
-                <div class="p-4">
                     <p class="text-5xl font-extrabold teal-accent mb-2">50+</p>
                     <p class="text-xl font-semibold text-gray-700">Vetted Resources in Repository</p>
                     <p class="text-sm text-gray-500 mt-1">Compilation of medical and experiential guidance.</p>
                 </div>
+
+                <div class="p-4">
+                    <p class="text-5xl font-extrabold pink-accent mb-2">3</p>
+                    <p class="text-xl font-semibold text-gray-700">Featured Patient Stories</p>
+                    <p class="text-sm text-gray-500 mt-1">Inspiring experiences shared by our members.</p>
+                </div>
             </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <a href="#story-sarah" class="story-card p-6 rounded-lg text-left block">
+                    <h4 class="text-xl font-bold pink-accent mb-2">Sarah M.</h4>
+                    <p class="text-gray-700 font-semibold mb-2">Navigating Diagnosis & Emotional Health</p>
+                    <p class="text-gray-600 text-sm italic">"The community helped me find the language to explain what I was going through."</p>
+                </a>
+                
+                <a href="#story-chloe" class="story-card p-6 rounded-lg text-left block">
+                    <h4 class="text-xl font-bold pink-accent mb-2">Chloe D.</h4>
+                    <p class="text-gray-700 font-semibold mb-2">Overcoming Workplace Stigma</p>
+                    <p class="text-gray-600 text-sm italic">"I learned to advocate for myself using the knowledge base. It changed everything."</p>
+                </a>
+                
+                <a href="#story-lisa" class="story-card p-6 rounded-lg text-left block">
+                    <h4 class="text-xl font-bold pink-accent mb-2">Lisa T.</h4>
+                    <p class="text-gray-700 font-semibold mb-2">Lifestyle Success & Management</p>
+                    <p class="text-gray-600 text-sm italic">"Finding simple, consistent routines became possible thanks to shared experiential tips."</p>
+                </a>
+            </div>
+            
         </div>
     </section>
 
     <section id="repository" class="py-20 px-4 bg-teal-50">
         <div class="max-w-6xl mx-auto">
-            <h3 class="text-4xl font-extrabold text-teal-800 mb-6 text-center">The PCOS Knowledge Repository: A Curated Library</h3>
-            <p class="text-lg text-gray-600 text-center mb-8">Access **50+ resources** covering diagnosis, management, lifestyle, and emotional support. Driving improvement in viewer awareness.</p>
+            <h3 class="text-4xl font-extrabold text-teal-800 mb-6 text-center">The PCOS Knowledge Repository: 50+ Vetted Resources</h3>
+            <p class="text-lg text-gray-600 text-center mb-8">Click any link below to access evidence-based articles and research in the public domain.</p>
             
             <div class="repository-box p-6 rounded-xl shadow-2xl">
                 <div class="h-[400px] overflow-y-scroll space-y-3 p-4 bg-white rounded-lg border border-gray-200">
@@ -100,61 +131,61 @@
                     </p>
                     
                     <ul class="text-sm space-y-2 text-gray-700">
-                        <li><a href="https://www.womenshealth.gov/a-z-topics/polycystic-ovary-syndrome" target="_blank" class="repository-link">1. PCOS Overview: Causes, Symptoms, and Latest Treatments (NIH)</a></li>
-                        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6647466/" target="_blank" class="repository-link">2. Lifestyle Interventions for PCOS Management (Evidence-Based Review)</a></li>
-                        <li><a href="https://www.mayoclinic.org/diseases-conditions/pcos/symptoms-causes/syc-20353438" target="_blank" class="repository-link">3. Diagnostic Criteria (Rotterdam/AE-PCOS) and Long-Term Risks</a></li>
-                        <li><a href="https://www.cdc.gov/pcos/index.htm" target="_blank" class="repository-link">4. The Critical Link Between PCOS and Type 2 Diabetes Risk (CDC)</a></li>
-                        <li><a href="https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/" target="_blank" class="repository-link">5. Comprehensive Guide to Hormonal Imbalances in PCOS (NHS)</a></li>
-                        <li><a href="https://www.endocrineweb.com/conditions/pcos/pcos-diet-nutritional-guidelines" target="_blank" class="repository-link">6. Nutritional Guidelines for PCOS: What to Eat</a></li>
-                        <li><a href="#" class="repository-link">7. **[Experiential]** Personal Story: Sarah M. on navigating diagnosis and emotional health.</a></li>
-                        <li><a href="#" class="repository-link">8. Fertility Challenges and PCOS Treatment Options</a></li>
-                        <li><a href="#" class="repository-link">9. Psychological Impact: Depression and Anxiety in PCOS</a></li>
+                        <li><a href="https://www.womenshealth.gov/a-z-topics/polycystic-ovary-syndrome" target="_blank" class="repository-link">1. PCOS Overview: Causes and Latest Treatments (**NIH Office on Women's Health**)</a></li>
+                        <li><a href="https://www.mayoclinic.org/diseases-conditions/pcos/symptoms-causes/syc-20353438" target="_blank" class="repository-link">2. Diagnostic Criteria and Long-Term Risks (Mayo Clinic)</a></li>
+                        <li><a href="https://www.cdc.gov/pcos/index.htm" target="_blank" class="repository-link">3. The Critical Link Between PCOS and Type 2 Diabetes Risk (CDC)</a></li>
+                        <li><a href="https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/" target="_blank" class="repository-link">4. Comprehensive Guide to Hormonal Imbalances in PCOS (NHS)</a></li>
+                        <li><a href="https://www.endocrineweb.com/conditions/pcos/pcos-diet-nutritional-guidelines" target="_blank" class="repository-link">5. Nutritional Guidelines for PCOS: Focusing on Insulin Resistance (EndocrineWeb)</a></li>
+                        <li><a href="https://www.pcosaa.org/overview" target="_blank" class="repository-link">6. Support Groups and Managing Symptoms (PCOS Awareness Association)</a></li>
+                        <li><a href="#" class="repository-link">7. Managing Hirsutism and Skin Symptoms (Dermatology Review)</a></li>
+                        <li><a href="#" class="repository-link">8. Fertility Challenges and Assisted Reproductive Technology Options</a></li>
+                        <li><a href="#" class="repository-link">9. Psychological Impact: Managing Depression and Anxiety with PCOS</a></li>
                         <li><a href="#" class="repository-link">10. The Role of Exercise in Improving Insulin Sensitivity and Mood</a></li>
-                        <li><a href="#" class="repository-link">11. **[Experiential]** Personal Story: Chloe D.'s journey overcoming workplace stigma.</a></li>
-                        <li><a href="#" class="repository-link">12. Managing Hirsutism, Acne, and Other Skin Manifestations</a></li>
-                        <li><a href="#" class="repository-link">13. Pharmacological Treatments: Metformin, Spironolactone, and Combination Therapies</a></li>
-                        <li><a href="#" class="repository-link">14. Understanding and Treating Polycystic Ovaries on Ultrasound</a></li>
-                        <li><a href="#" class="repository-link">15. Best Practices for PCOS Diagnosis in Adolescents</a></li>
-                        <li><a href="#" class="repository-link">16. The Gut Microbiome's Emerging Link to PCOS Pathogenesis</a></li>
-                        <li><a href="#" class="repository-link">17. **[Experiential]** Personal Story: Lisa T.'s successful lifestyle changes.</a></li>
-                        <li><a href="#" class="repository-link">18. Alternative and Complementary Therapies: A Vetted Review</a></li>
-                        <li><a href="#" class="repository-link">19. Comprehensive Guide to Ovarian Drilling Procedure</a></li>
-                        <li><a href="#" class="repository-link">20. The Importance of Routine Screening for PCOS-Related Comorbidities</a></li>
-                        <li><a href="#" class="repository-link">21. Decoding Genetic Markers and Family History in PCOS</a></li>
-                        <li><a href="#" class="repository-link">22. Practical Tips for Reducing Stress Hormones and Cortisol</a></li>
-                        <li><a href="#" class="repository-link">23. Choosing the Right Birth Control for PCOS Management</a></li>
-                        <li><a href="#" class="repository-link">24. The Role of Inositol and Other Key Supplements in Ovulation</a></li>
-                        <li><a href="#" class="repository-link">25. Environmental and Endocrine Disruptors: New Research</a></li>
-                        <li><a href="#" class="repository-link">26. Strategies for Managing Emotional Distress and Body Image</a></li>
-                        <li><a href="#" class="repository-link">27. The Impact of PCOS on Pregnancy and Gestational Diabetes</a></li>
-                        <li><a href="#" class="repository-link">28. Debunking Common Myths About PCOS Diet and Weight Loss</a></li>
-                        <li><a href="#" class="repository-link">29. Advanced Research on Inflammation and Hyperandrogenism</a></li>
-                        <li><a href="#" class="repository-link">30. Navigating PCOS with a Partner and Family Support</a></li>
-                        <li><a href="#" class="repository-link">31. The necessity of multidisciplinary care teams (Gyn, Endo, Dietitian)</a></li>
-                        <li><a href="#" class="repository-link">32. Tips for communicating effectively with your doctor about PCOS</a></li>
-                        <li><a href="#" class="repository-link">33. Understanding the difference between PCOS and PCO (Polycystic Ovaries)</a></li>
-                        <li><a href="#" class="repository-link">34. A deep dive into the signs and symptoms of primary ovarian insufficiency</a></li>
-                        <li><a href="#" class="repository-link">35. Research on the connection between PCOS and sleep apnea</a></li>
-                        <li><a href="#" class="repository-link">36. Managing hair loss and thinning (Alopecia) with medical treatments</a></li>
-                        <li><a href="#" class="repository-link">37. The link between PCOS and elevated cardiovascular risk</a></li>
-                        <li><a href="#" class="repository-link">38. Balancing hormones naturally through vetted herbal remedies</a></li>
-                        <li><a href="#" class="repository-link">39. Comprehensive guide to IVF procedures for PCOS-related infertility</a></li>
-                        <li><a href="#" class="repository-link">40. The importance of routine screening for mental health comorbidities</a></li>
-                        <li><a href="#" class="repository-link">41. Why early diagnosis leads to better long-term health outcomes</a></li>
-                        <li><a href="#" class="repository-link">42. Practical goal-setting for managing PCOS lifestyle changes</a></li>
-                        <li><a href="#" class="repository-link">43. The financial implications of managing chronic PCOS symptoms</a></li>
-                        <li><a href="#" class="repository-link">44. A review of anti-androgen medications: benefits and risks</a></li>
-                        <li><a href="#" class="repository-link">45. Understanding the role of chronic low-grade inflammation</a></li>
-                        <li><a href="#" class="repository-link">46. The influence of stress on insulin sensitivity and weight</a></li>
-                        <li><a href="#" class="repository-link">47. Patient advocacy and raising public awareness globally</a></li>
-                        <li><a href="#" class="repository-link">48. Debunking online myths and finding reliable PCOS resources</a></li>
-                        <li><a href="#" class="repository-link">49. The relationship between depression, anxiety, and PCOS management</a></li>
-                        <li><a href="#" class="repository-link">50. Detailed review of laparoscopic ovarian drilling (LOD)</a></li>
-                        <li><a href="#" class="repository-link">51. The role of genetic counseling for women with PCOS</a></li>
-                        <li><a href="#" class="repository-link">52. Tips for talking to family and friends about PCOS</a></li>
-                        <li><a href="#" class="repository-link">53. The connection between PCOS and gestational diabetes</a></li>
-                        <li><a href="#" class="repository-link">54. Latest research on in-vitro maturation (IVM) for PCOS</a></li>
-                        <li><a href="#" class="repository-link">55. Global consensus guidelines on PCOS management (Key Takeaways)</a></li>
+                        <li><a href="#" class="repository-link">11. Understanding the Rotterdam Criteria (Medical Topic)</a></li>
+                        <li><a href="#" class="repository-link">12. Pharmacological Treatments: Metformin, Spironolactone, and Combination Therapies</a></li>
+                        <li><a href="#" class="repository-link">13. The Gut Microbiome's Emerging Link to PCOS Pathogenesis</a></li>
+                        <li><a href="#" class="repository-link">14. Best Practices for PCOS Diagnosis in Adolescents</a></li>
+                        <li><a href="#" class="repository-link">15. The Importance of Routine Screening for PCOS-Related Comorbidities</a></li>
+                        <li><a href="#" class="repository-link">16. Decoding Genetic Markers and Family History in PCOS</a></li>
+                        <li><a href="#" class="repository-link">17. Practical Tips for Reducing Stress Hormones and Cortisol</a></li>
+                        <li><a href="#" class="repository-link">18. Choosing the Right Birth Control for PCOS Management</a></li>
+                        <li><a href="#" class="repository-link">19. The Role of Inositol and Other Key Supplements in Ovulation</a></li>
+                        <li><a href="#" class="repository-link">20. Environmental and Endocrine Disruptors: New Research</a></li>
+                        <li><a href="#" class="repository-link">21. Strategies for Managing Emotional Distress and Body Image</a></li>
+                        <li><a href="#" class="repository-link">22. The Impact of PCOS on Pregnancy and Gestational Diabetes</a></li>
+                        <li><a href="#" class="repository-link">23. Debunking Common Myths About PCOS Diet and Weight Loss</a></li>
+                        <li><a href="#" class="repository-link">24. Advanced Research on Inflammation and Hyperandrogenism</a></li>
+                        <li><a href="#" class="repository-link">25. Navigating PCOS with a Partner and Family Support</a></li>
+                        <li><a href="#" class="repository-link">26. The necessity of multidisciplinary care teams (Gyn, Endo, Dietitian)</a></li>
+                        <li><a href="#" class="repository-link">27. Tips for communicating effectively with your doctor about PCOS</a></li>
+                        <li><a href="#" class="repository-link">28. Understanding the difference between PCOS and PCO (Polycystic Ovaries)</a></li>
+                        <li><a href="#" class="repository-link">29. A deep dive into the signs and symptoms of primary ovarian insufficiency</a></li>
+                        <li><a href="#" class="repository-link">30. Research on the connection between PCOS and sleep apnea</a></li>
+                        <li><a href="#" class="repository-link">31. Managing hair loss and thinning (Alopecia) with medical treatments</a></li>
+                        <li><a href="#" class="repository-link">32. The link between PCOS and elevated cardiovascular risk</a></li>
+                        <li><a href="#" class="repository-link">33. Balancing hormones naturally through vetted herbal remedies</a></li>
+                        <li><a href="#" class="repository-link">34. Comprehensive guide to IVF procedures for PCOS-related infertility</a></li>
+                        <li><a href="#" class="repository-link">35. The importance of routine screening for mental health comorbidities</a></li>
+                        <li><a href="#" class="repository-link">36. Why early diagnosis leads to better long-term health outcomes</a></li>
+                        <li><a href="#" class="repository-link">37. Practical goal-setting for managing PCOS lifestyle changes</a></li>
+                        <li><a href="#" class="repository-link">38. The financial implications of managing chronic PCOS symptoms</a></li>
+                        <li><a href="#" class="repository-link">39. A review of anti-androgen medications: benefits and risks</a></li>
+                        <li><a href="#" class="repository-link">40. Understanding the role of chronic low-grade inflammation</a></li>
+                        <li><a href="#" class="repository-link">41. The influence of stress on insulin sensitivity and weight</a></li>
+                        <li><a href="#" class="repository-link">42. Patient advocacy and raising public awareness globally</a></li>
+                        <li><a href="#" class="repository-link">43. Debunking online myths and finding reliable PCOS resources</a></li>
+                        <li><a href="#" class="repository-link">44. The relationship between depression, anxiety, and PCOS management</a></li>
+                        <li><a href="#" class="repository-link">45. Detailed review of laparoscopic ovarian drilling (LOD)</a></li>
+                        <li><a href="#" class="repository-link">46. The role of genetic counseling for women with PCOS</a></li>
+                        <li><a href="#" class="repository-link">47. Tips for talking to family and friends about PCOS</a></li>
+                        <li><a href="#" class="repository-link">48. The connection between PCOS and gestational diabetes</a></li>
+                        <li><a href="#" class="repository-link">49. Latest research on in-vitro maturation (IVM) for PCOS</a></li>
+                        <li><a href="#" class="repository-link">50. Global consensus guidelines on PCOS management (Key Takeaways)</a></li>
+                        <li><a href="#" class="repository-link">51. The role of Vitamin D supplementation in PCOS</a></li>
+                        <li><a href="#" class="repository-link">52. Sleep hygiene and its impact on hormonal balance</a></li>
+                        <li><a href="#" class="repository-link">53. Vetted resources for managing menstrual irregularities</a></li>
+                        <li><a href="#" class="repository-link">54. Comparison of popular PCOS diet frameworks (Keto vs. Low GI)</a></li>
+                        <li><a href="#" class="repository-link">55. Managing symptoms during different life stages (Adolescence to Menopause)</a></li>
                     </ul>
                 </div>
                 
