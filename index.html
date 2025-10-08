@@ -1,84 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PCOS Awareness Community & Repository</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-            color: #1e293b;
-        }
-        .teal-accent { color: #0d9488; }
-        .pink-accent { color: #db2777; }
-        .btn-teal {
-            background-color: #0d9488;
-            color: #ffffff;
-            transition: background-color 0.3s;
-        }
-        .btn-teal:hover { background-color: #0f766e; }
-        .repository-link:hover {
-            color: #db2777;
-            text-decoration: underline;
-        }
-        .repository-box {
-            background-color: #ffffff;
-            border: 1px solid #e2eeef;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-        .story-card {
-            border: 1px solid #f9a8d4;
-            background-color: #fdf2f8;
-            transition: transform 0.2s;
-        }
-        .story-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 15px rgba(219, 39, 119, 0.1);
-        }
-        .header-bg {
-            background: linear-gradient(to right, #0d9488, #db2777);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PCOS Awareness Community & Repository</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+/* Custom Styles for PCOS Theme (Teal/Pink/Clean White) */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+.teal-accent { color: #0d9488; }
+.pink-accent { color: #db2777; }
+.btn-teal { background-color: #0d9488; color: #ffffff; transition: background-color 0.3s; }
+.btn-teal:hover { background-color: #0f766e; }
+.repository-link:hover { color: #db2777; text-decoration: underline; }
+.repository-box { background-color: #ffffff; border: 1px solid #e2eeef; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); }
+.story-card { border: 1px solid #f9a8d4; background-color: #fdf2f8; transition: transform 0.2s; }
+.story-card:hover { transform: translateY(-3px); box-shadow: 0 10px 15px rgba(219, 39, 119, 0.1); }
+</style>
 </head>
 <body class="antialiased">
 
-    <header class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-extrabold teal-accent tracking-wider">PCOS Awareness Hub</h1>
-            <nav class="space-x-4">
-                <a href="#impact" class="text-gray-600 hover:teal-accent transition duration-150 font-medium">Community Impact</a>
-                <a href="#repository" class="text-gray-600 hover:teal-accent transition duration-150 font-medium">Knowledge Base</a>
-                <a href="#about-mission" class="text-gray-600 hover:teal-accent transition duration-150 font-medium">Our Mission</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScdQ0N3ZZfa8D2827sXjzBdQBThIpiGyH2GXfwOKNndcv7niQ/viewform?usp=sharing&ouid=102472110847707373068" target="_blank" class="btn-teal px-4 py-2 rounded-lg font-semibold shadow-md text-sm">Become a Member</a>
-            </nav>
-        </div>
-    </header>
-
-    <section class="text-center py-20 px-4 bg-teal-50 border-b border-teal-200">
-        <h2 class="text-5xl md:text-6xl font-extrabold text-teal-800 mb-4 leading-tight">
-            Fighting Stigma, Fueling Knowledge
-        </h2>
-        <p class="text-xl text-gray-700 max-w-3xl mx-auto mt-4">
-            A trusted community and comprehensive resource for empowering individuals managing Polycystic Ovary Syndrome (PCOS).
-        </p>
-    </section>
-
-    <section id="impact" class="py-20 px-4">
-        <div class="max-w-6xl mx-auto">
-            <h3 class="text-4xl font-extrabold pink-accent mb-12 text-center">Our Community Achievements & Patient Stories</h3>
-            
-            <div class="grid md:grid-cols-3 gap-8 text-center bg-white p-8 rounded-xl shadow-xl border-b-4 border-teal-500 mb-12">
-                
-                <div class="p-4 border-r border-gray-200 md:border-r-0">
-                    <p class="text-5xl font-extrabold teal-accent mb-2">70+</p>
-                    <p class="text-xl font-semibold text-gray-700">Active Users Combatting Stigma</p>
-                    <p class="text-sm text-gray-500 mt-1">Our digital community drives open and informed discussions.</p>
-                </div>
-                
-                <div class="p-4 border-r border-gray-200">
-                    <p class="text-5xl font-extrabold teal-accent mb-2">50+</p>
-                    <p class="text-xl font-semibold text-gray-700">Vetted Resources in Repository</p>
-                    <p class="text-sm text-gray
+<header class="sticky top-0 z-50 bg-white shadow-md">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-extrabold teal-accent tracking-wider">PCOS Awareness Hub</h1>
+    <nav class="space-x-4">
+      <a href="#impact" class="text-gray-600 hover:teal-accent transition duration-150 font-medium">Community Impact</a>
+      <a href="#repository" class="text-gray-600 hover:teal-accent transition duration-150 font-medium">Knowledge Base</a>
+      <a href="#about-mission" class="text-gray-600 hover:teal-accent transition duration-150 font-medium">Our Mission</a>
+      <a href="ht
